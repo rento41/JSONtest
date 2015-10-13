@@ -1,0 +1,106 @@
+/* 
+	-1. Font and sizing txt
+	0. My classe's
+	1. Helper classe's
+	2. Menu
+	3. Intro
+ 	4. About
+    5. Contact
+	6. My skills
+*/
+
+/*-1. font and sizing txt*/
+
+@font-face {font-family: Lato;src: url(../fonts/Lato-Regular.ttf);}
+@font-face {font-family: LatoBlack;src: url(../fonts/Lato-Black.ttf);}
+@font-face {font-family: LatoBold;src: url(../fonts/Lato-Bold.ttf);}
+@font-face {font-family: LatoLight;src: url(../fonts/Lato-Light.ttf);}
+
+@media (min-width: 1200px) {body,html{font-size: 1em;}}
+@media (min-width: 992px) and (max-width: 1199px) {body,html{font-size: 1em;}}
+@media (min-width: 768px) and (max-width: 991px) {body,html{font-size: 1em;}}
+@media (max-width: 767px) {body,html{font-size: 0.9em !important;}}
+@media (max-width: 480px) {body,html{font-size: 0.9em !important;}}
+
+/* 0. my classe's */
+.MyForm{padding-left: 0px; padding-right: 0px; font-size: 1.2em; border: none !important; border-bottom: 2px solid #D8D8D8 !important; border-radius: 0px !important; background-color: transparent !important; box-shadow: none !important; width: 100% !important;}
+.MyBtn{border: none; border-radius: 0px !important; background-color: white; color: #000000; }
+.loading-overlay {background-color: #ffffff; height: 100%; width: 100%; opacity: 0.975; position: fixed; -webkit-transition: opacity 3s ease-in-out; -moz-transition: opacity 3s ease-in-out; -o-transition: opacity 3s ease-in-out; transition: opacity 3s ease-in-out ;z-index: 999999;}
+.loading-overlay .loader {bottom: 0; left: 0; height: 14.125em; margin: auto; position: absolute;right: 0;top: 0;width: 25em;}
+#loader{position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.9);transition: 1s 0.4s;}
+#loader img{margin:0 auto; vertical-align: middle;}
+body, html{font-family: Lato; height: 100% !important;}
+.cBtn{ background-color: rgba(230, 44, 44, 0.5) !important; border: none; color: white;}
+
+/* 1. helper classe's */
+.row-centered {text-align: center;}
+.col-centered {display: inline-block; float: none; text-align: left;}
+
+/* 2. Menu */
+.cMenu{background-color: white !important; }
+.navbar-ex1-collapse ul li a{ color: #333333 !important;}
+
+/* 3. intro */
+#intro{ background: url('../images/header.jpg') no-repeat center;  background-size: cover;}
+#intro .info{ background-color: rgba(230, 44, 44, 0.3); width: 300px; height: 300px; border-radius: 50%; }
+#intro .info i{ font-size: 8em; margin-left: 30%; margin-top: 26%; color: white;}
+#intro h1{margin-bottom: 10%; margin-top: 0.5em; font-family: LatoBold; color: rgba(230, 44, 44, 0.7); font-size: 6em;}
+#intro h1 span{margin-bottom: 500px; font-family: LatoLight !important; color: rgba(230, 44, 44, 0.5); border-bottom: 1px solid rgba(230, 44, 44, 0.5);}
+#intro a{border-radius: 5px; color: #333333; text-decoration: none; padding: 20px; font-size: 1.5em; background-color: rgba(255, 255, 255, 0.5) !important; text-align: center; vertical-align: middle;}
+#intro a:hover{ text-decoration: none; color: #E62C2C;}
+@media(max-width: 768px){
+	#intro h1{margin-bottom: 23%;}
+}
+
+/* 4. about */
+#about .imgPlace{position:relative !important; margin:0 auto ;height:257px; width:257px;}
+#about img {border: 5px solid rgba(230, 44, 44, 0.5); border-radius: 50%; position:absolute; left:0; -webkit-transition: opacity 0.8s ease-in-out; -moz-transition: opacity 0.8s ease-in-out; -o-transition: opacity 0.8s ease-in-out; transition: opacity 0.8s ease-in-out;}
+#about img.top:hover {opacity:0;}
+#about .TxtInfo{ text-align: center;}
+#about .description{display: inline-block;}
+#about ul{padding-left: 0px !important; list-style-type: none; margin-top: 100px; border-top: 1px solid rgba(230, 44, 44, 0.5);}
+#about ul li{display: inline; margin-left: 15px; margin-right: 15px;}
+#about ul li i{font-size: 5em; padding-top: 20px;}
+#about ul h3{margin-top: 30px; }
+
+@media(max-width: 1200px){
+	#about .TxtInfo{ text-align: center; margin-left: -70px;}
+	#about .description{display: inline-block; margin-left: 50px;}
+}
+@media(max-width: 991px){
+	#about .TxtInfo{ text-align: center; margin-left: 0px;}
+}
+@media(max-width: 778px){
+	#about .TxtInfo{display: inline-block; margin-left: 70px;}
+}
+@media(max-width: 767px){
+	#about .imgPlace{position:relative !important; margin:0 auto ;height:257px; width:257px;}
+	#about .description{display: inline-block; margin-left: 0px;}
+}
+
+/* 5. contact page */
+#contact{ background-color: white;}
+#contact #map-canvas{ width: 100%; height: 70%;}
+#contact .contactInfo{margin-top: 50px;}
+#contact .contactInfo h3{color: #333333;}
+#contact .contactInfo ul{padding-left: 0px; list-style-type: none;}
+#contact .contactInfo ul li{margin-top: 8px;}
+#contact .contactInfo ul li i{display: inline; }
+#contact .contactInfo ul li i p{margin-left: 10px; display: inline; }
+#contact .contactInfo ul li i a{font-size: 1.2em; margin-left: 10px; color: #333333;}
+#contact .contactInfo ul li i a:hover{text-decoration: none;}
+#contact .upperLine{width: 150px; height: 1px; background-color: rgba(230, 44, 44, 0.5); margin: 3.125em auto -1.875em auto;}
+#contact .lowerLine{width: 150px; height: 1px; background-color: rgba(230, 44, 44, 0.5); margin: 1.875em auto -3.125em auto;}
+#contact ul.contactSocial{ padding-left: 0px; list-style-type: none; margin-top: 3.750em;}
+#contact ul.contactSocial li{display: inline; margin-left: 15px;}
+#contact ul.contactSocial li a i{font-size: 1.4em; color: #333333;}
+#contact ul.contactSocial li a i:hover{ color: #E62C2C;}
+
+#contact .copyRight{margin-top: 60px; }
+
+/* 6. My skill's */
+#skills .MyBtn{margin-top: 20px; margin-bottom: 20px;}
+#skills .MyBtn:hover{margin-top: 20px; background-color: rgba(230, 44, 44, 0.5); color: white;}
+#skills .MyForm:focus{border-bottom: 2px solid rgba(230, 44, 44, 0.5) !important; }
+#skills .carousel-inner .item{margin-bottom: 20px;}
+#skills h2{margin-bottom: 50px;}
